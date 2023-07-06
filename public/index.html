@@ -1,73 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Kubby Buddy</title>
-  </head>
-  <body>
-    <div class="hero">
-      <img
-        class="logo"
-        style="background-color: transparent"
-        src="./assets/logo_title.svg"
-        alt="Kubby Buddy Logo"
-      />
-      <div class="tagline">
-        <h1>your container management buddy</h1>
-        <a href="https://www.linkedin.com/company/kubby-buddy/"
-          ><img src="./assets/linkedin-icon.svg"
-        /></a>
-        <a href="https://github.com/oslabs-beta/kubby-buddy"
-          ><img src="./assets/iconmonstr-github-1.svg"
-        /></a>
-      </div>
-    </div>
-    <div class="demo">
-      <h4></h4>
-    </div>
-    <div class="about-us-logo">
-        <img src="./assets/kubbybear.svg" />
-        <h1>Our<br/>Team</h1>
-    </div>
-    <div class="about-us">
-    
-      <div class="card">
-        <h3 class="card-text">Josh Goo</h3>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/joshgoo/"><img src="./assets/linkedin-icon.svg" /></a>
-            <a href="https://github.com/YeChanGoo"><img src="./assets/iconmonstr-github-1.svg" /></a>
-        </div>
-      </div>
-      <div class="card">
-        <h3 class="card-text">Trey Walker</h3>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/kasualkid12/"><img src="./assets/linkedin-icon.svg" /></a>
-            <a href="https://github.com/kasualkid12"><img src="./assets/iconmonstr-github-1.svg" /></a>
-        </div>
-      </div>
-      <div class="card">
-        <h3 class="card-text">Chang Moon</h3>
-        <div class="socials">
-        <a href="https://www.linkedin.com/in/chang-moon-6b2b91278/"><img src="./assets/linkedin-icon.svg" /></a>
-            <a href="https://github.com/ThickCorgi"><img src="./assets/iconmonstr-github-1.svg" /></a>
-        </div>
-      </div>
-      <div class="card">
-        <h3 class="card-text">Steve Lemlek</h3>
-        <div class="socials">
-        <a href="https://www.linkedin.com/in/steve-lemlek/"><img src="./assets/linkedin-icon.svg" /></a>
-            <a href="https://github.com/CoachSteveMichael"><img src="./assets/iconmonstr-github-1.svg" /></a>
-        </div>
-      </div>
-      <div class="card">
-        <h3 class="card-text">William Reilly</h3>
-        <div class="socials">
-        <a href="https://www.linkedin.com/in/william-reilly-338a5788/"><img src="./assets/linkedin-icon.svg" /></a>
-            <a href="https://github.com/Wills-Git"><img src="./assets/iconmonstr-github-1.svg" /></a>
-        </div>
-      </div>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Kubby Buddy</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a class="linkedin" href="https://www.linkedin.com/company/kubby-buddy/"></a>
+
+			<img class="logo" style="background-color: transparent" src="./assets/logo_title.svg" alt="Kubby Buddy Logo" />
+
+			<a class="github" href="https://github.com/oslabs-beta/kubby-buddy"></a>
+		</div>
+		<div class="screen">
+			<div class="hero">
+				<div class="tagline">
+					<h1>
+						Kubby <b><i>Buddy</i></b>
+					</h1>
+					<p>
+						We're you're container management pal. View live streaming data and start, stop, and delete your containers with a simple click
+						of your mouse.
+					</p>
+          <a class = 'cta-button' href = "https://github.com/oslabs-beta/kubby-buddy">
+					<div class="cta">Get it here!</div>
+        </a>
+				</div>
+			</div>
+		</div>
+		<div class="orange-divider">
+			<h1 class="divider-header">Our Features</h1>
+			<p class="divider">
+				We're not your grandma's container data visualizer. Kubby Buddy's your real, deal, container management pal. Start, stop, delete,
+				and more directly from the dashboard.
+			</p>
+		</div>
+		<div class="features-container">
+			<div class="flex-row">
+				<img
+					src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"
+					alt=""
+				/>
+
+				<div class="flex-row">
+					<div class="flex-column">
+						<h3>Container Controls</h3>
+						<ul>
+							<li>view container logs</li>
+							<li>live streaming mini-dashboard</li>
+							<li>view all running & stopped containers</li>
+							<li>start containers</li>
+							<li>stop containers</li>
+							<li>delete containers</li>
+						</ul>
+					</div>
+					<div class="flex-column">
+						<h3>Image Controls</h3>
+						<ul>
+							<li>view all images</li>
+							<li>run containers based on images</li>
+							<li>run with volumes and ports</li>
+							<li>run with auto-remove flag</li>
+							<li>delete unused images</li>
+							<li>view and delete volumes</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider-line"></div>
+		<div class="orange-divider demos">
+			<h1 class="divider-header">Container Dashboard Demo</h1>
+			<p class="divider">Let's see it in action. Check out what makes our container management so painless.</p>
+		</div>
+
+		<div class="container-dashboard">
+			<div class="right-align">
+				<div class="tagline tagline-demo">
+					<h2 class="h1-demo">Demo</h2>
+					<h1>Container Dashboard</h1>
+				</div>
+			</div>
+		</div>
+		<div class="orange-divider demos">
+			<h1 class="divider-header">Image Dashboard Demo</h1>
+			<p class="divider">Manage all of your images at a glance. View all images, delete them, and run containers based on them.</p>
+		</div>
+		<div class="screen image-dashboard">
+			<div class="left-align">
+				<div class="tagline tagline-demo">
+					<h2 class="h1-demo">Demo</h2>
+					<h1>Image Dashboard</h1>
+				</div>
+			</div>
+		</div>
+		<div class="orange-divider">
+			<h1 class="divider-header">Meet The Team</h1>
+			<p class="divider"></p>
+		</div>
+		<div class="about-us">
+			<div class="card">
+				<h3 class="card-text">Josh Goo</h3>
+				<img src="https://avatars.githubusercontent.com/u/126903033?v=4" width="100" />
+
+				<div class="socials">
+					<a href="https://www.linkedin.com/in/joshgoo/"><img src="./assets/linkedin-icon.svg" /></a>
+					<a href="https://github.com/YeChanGoo"><img src="./assets/iconmonstr-github-1.svg" /></a>
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="card-text">Trey Walker</h3>
+				<img src="https://avatars.githubusercontent.com/u/22490059?v=4" width="100" />
+
+				<div class="socials">
+					<a href="https://www.linkedin.com/in/kasualkid12/"><img src="./assets/linkedin-icon.svg" /></a>
+					<a href="https://github.com/kasualkid12"><img src="./assets/iconmonstr-github-1.svg" /></a>
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="card-text">Chang Moon</h3>
+				<img src="https://avatars.githubusercontent.com/u/123416896?v=4" width="100" />
+
+				<div class="socials">
+					<a href="https://www.linkedin.com/in/chang-moon-6b2b91278/"><img src="./assets/linkedin-icon.svg" /></a>
+					<a href="https://github.com/ThickCorgi"><img src="./assets/iconmonstr-github-1.svg" /></a>
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="card-text">Steve Lemlek</h3>
+				<img src="https://avatars.githubusercontent.com/u/108921232?v=4" width="100" />
+
+				<div class="socials">
+					<a href="https://www.linkedin.com/in/steve-lemlek/"><img src="./assets/linkedin-icon.svg" /></a>
+					<a href="https://github.com/CoachSteveMichael"><img src="./assets/iconmonstr-github-1.svg" /></a>
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="card-text">William Reilly</h3>
+				<img src="https://avatars.githubusercontent.com/u/127268892?v=4" width="100" />
+
+				<div class="socials">
+					<a href="https://www.linkedin.com/in/william-reilly-338a5788/"><img src="./assets/linkedin-icon.svg" /></a>
+					<a href="https://github.com/Wills-Git"><img src="./assets/iconmonstr-github-1.svg" /></a>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
