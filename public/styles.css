@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-  color: 	#212121 
+  color: 	#212121;
 }
 
 img {
@@ -37,9 +37,9 @@ body {
   justify-content: center;
   align-content: center; */
 	width: 100%;
-	min-width: fit-content;
+	/* min-width: fit-content; */
 	margin: 0;
-	grid-template-columns: 1fr;
+
 }
 .screen {
 	background: url('https://s12.gifyu.com/images/SWSAr.gif');
@@ -95,7 +95,7 @@ body {
   background-size: cover;
 }
 .hero {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	/* display: grid;
   justify-content: center; */
@@ -110,7 +110,7 @@ body {
 }
 
 .left-align {
-	width: 100vw;
+	width: 100%;
 	height: 50vh;
 	/* display: grid;
   justify-content: center; */
@@ -148,7 +148,7 @@ body {
 	/* margin: auto; */
 	border-top: 1px solid lightgray;
 	margin-top: 10%;
-	width: fit-content;
+	/* width: fit-content; */
 	padding: 2em;
 	box-shadow: 0px 0px 5px #666367;
 	background: white;
@@ -258,7 +258,7 @@ ul li:before {
 }
 
 .right-align {
-  width: 100vw;
+  width: 100%;
 	height: 50vh;
 	/* display: grid;
   justify-content: center; */
@@ -287,7 +287,7 @@ ul li:before {
   padding: 2em;
 }
 .logo {
-	width: 200px;
+	max-width: 200px;
 	min-width: 100px;
 	margin: auto;
 	height: auto;
@@ -295,12 +295,12 @@ ul li:before {
 }
 
 
-.about-us-logo {
+/* .about-us-logo {
 	display: grid;
 }
 .about-us-logo img {
 	height: 25em;
-}
+} */
 .about-us-logo h1 {
 	text-align: center;
 	margin: auto;
@@ -347,4 +347,78 @@ ul li:before {
 	height: 50px;
 	width: 50px;
 	margin: 0.2em;
+}
+
+
+@media screen and (max-width: 600px) {
+
+	body {
+		max-width: 600px;
+		overflow-x: hidden;
+	}
+	
+	.orange-divider {
+		text-align:center;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.orange-divider p {
+		width: 100%;
+	}
+	.hero {
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.left-align {
+		width: 100%;
+	}
+
+	.tagline {
+		width: 100%;
+		align-items: center;
+		height: 30%;
+	}
+
+	.divider-header  {
+		font-size: 2em;
+		font-weight: 300;
+		margin: 0.3em auto 0 auto;
+		border-bottom: 1px solid #ff7c01;
+	}
+
+	.flex-row {
+		flex-direction: column;
+	}
+
+	.flex-column {
+		display: flex;
+		flex-direction: column;
+		width: 85%;
+	}
+
+	.right-align, .left-align {
+		display: none;
+		width: 100%;
+	}
+	.about-us {
+		display: flex;
+		flex-direction:column;
+	}
+
+	.card {
+		flex-direction: column;
+	}
+
+
+	.features-container {
+		margin: 0
+	}
+
 }
